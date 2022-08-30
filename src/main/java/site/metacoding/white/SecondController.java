@@ -37,11 +37,11 @@ public class SecondController {
 	
 	@PutMapping("/second")
 	public String putDate(String title, String content) { // 스프링 파싱 기본전략: x-www-form-urlencoded
-		return "title: "+title+"content: "+content;
+		return "title: "+title+", content: "+content;
 	}
 	
 	@DeleteMapping("/second/{id}")
-	public String deleteDate(@PathVariable Integer id) { // 스프링 파싱 기본전략: x-www-form-urlencoded
+	public String deleteDate(@PathVariable Integer id) { 
 		return "delete ok";
 	}
 }
